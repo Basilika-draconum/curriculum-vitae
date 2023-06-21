@@ -1,0 +1,38 @@
+.section_header{
+    padding-top: 33.5px ;
+    padding-bottom: 33.5px;
+    border-bottom:1px solid black ;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    display: flex;
+    gap:4px;
+    text-transform: uppercase;
+}
+.title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.position{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color:var(--color-accent)
+}
+.navigation{
+    
+    text-transform: uppercase;  
+    &_list{
+        display: flex;
+        list-style-type: none;
+        gap:21.67px;
+    }
+    &_item{
+
+    }
+}
