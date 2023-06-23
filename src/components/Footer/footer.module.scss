@@ -17,6 +17,7 @@
     @media screen and (min-width: 1200px) {
         gap:0;
         flex-direction:row;
+        justify-content: space-between;
     }
 
     &_secured{
@@ -25,9 +26,9 @@
         text-transform: uppercase;
         display: flex;
         align-items: flex-end;
+        margin: 0 auto;
         @media screen and (min-width:768px){
             font-size: 10px;
-            margin: 0 auto;
         }
         @media screen and (min-width:1200px) {
             margin: 0;
@@ -50,6 +51,7 @@
         @media  screen and (min-width:768px) {
             flex-wrap: nowrap; 
             gap: 55.5px;
+            justify-content: space-between;
         }
     }
     &_item {
