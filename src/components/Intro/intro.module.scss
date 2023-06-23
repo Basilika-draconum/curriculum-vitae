@@ -21,25 +21,30 @@
     @media screen and (min-width: 768px) {
         gap: 91px;
         justify-content: center;
-        flex-direction: row;
         }
     @media screen and (min-width: 1200px) {
+        flex-direction: row;
         gap: 70px;
     }
 }
-.photo{
-
+.photo{ 
+    margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
 }
 .intro_content{
     display: flex;
     flex-direction: column;
     max-width: 348px;
+    margin: 0 auto;
 
     @media screen and (min-width: 768px) {
         max-width: 464px;
     }
     @media screen and (min-width: 1200px) {
         max-width: 459px;
+        margin: 0;
     }
 }
 .content{

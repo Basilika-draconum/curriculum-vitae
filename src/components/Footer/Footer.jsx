@@ -1,6 +1,11 @@
 import React from "react";
+import { ReactSVG } from "react-svg";
+
 import s from "./footer.module.scss";
-import sprite from "../../images/icons/common.svg";
+
+import telegram from "../../images/icons/telegram.svg";
+import linkedin from "../../images/icons/linkedin.svg";
+import github from "../../images/icons/github.svg";
 
 const Footer = () => {
   return (
@@ -8,7 +13,7 @@ const Footer = () => {
       <div className={`container ${s.footer}`}>
         <p className={s.footer_secured}>
           &#169; 2035 Anzhelika Dubinenko.
-          <br /> Powered and secured by myself
+          <br className={s.footer_secured_br} /> Powered and secured by myself
         </p>
         <ul className={s.footer_list}>
           <li className={s.footer_item}>
@@ -32,9 +37,11 @@ const Footer = () => {
                   href="https://t.me/Lika_Basilika"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <svg className="icon icon-telegram">
+                  {/* <svg className="icon icon-telegram">
                     <use href={sprite + "#icon-telegram"} />
-                  </svg>
+                  </svg> */}
+
+                  <ReactSVG src={telegram} width={40} height={40} />
                 </a>
               </li>
               <li className={s.item_link}>
@@ -43,9 +50,7 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/lika-basilika/"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <svg className="icon icon-linkedin">
-                    <use href={sprite + "#icon-linkedin"}></use>
-                  </svg>
+                  <ReactSVG src={linkedin} />
                 </a>
               </li>
               <li className={s.item_link}>
@@ -54,9 +59,7 @@ const Footer = () => {
                   href="https://github.com/Basilika-draconum"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <svg className="icon icon-github">
-                    <use href={sprite + "#icon-github"} />
-                  </svg>
+                  <ReactSVG src={github} />
                 </a>
               </li>
             </ul>
