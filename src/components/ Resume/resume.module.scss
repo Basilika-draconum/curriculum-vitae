@@ -1,6 +1,65 @@
 .section_resume{
-
+    background-color: var(--bgColor-primary);
+    padding-top: 56px;
+    padding-bottom: 56px;
 }
 .resume{
-    
+  
+}
+.title_page {
+    font-size: 40px;
+    line-height: 49px;
+    color: var(--color-accent);
+    margin: 0 auto;
+    margin-bottom: 56px;
+
+    @media screen and (min-width:768px) {
+        font-size: 64px;
+        line-height: 78px;
+    }
+}
+.block{
+    background-color: var(--color-white);
+    padding: 0 24px 24px;
+    margin-bottom: 48px;
+
+    &_title{
+        background-color: var(--bgColor-accent);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        padding: 20px;
+        border-radius: 0px 0px 8px 8px;
+        color: var(--color-white);
+    }
+    &_list{
+        list-style-type: none;
+    }
+    &_item{
+      margin-top: 32px;
+    }
+}
+
+.item_title{
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.item_years{
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+.item_text{
+    font-size: 15px;
+    line-height: 18px;
+}
+.skills_title{
+    margin-top: 16px;
 }

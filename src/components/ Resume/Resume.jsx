@@ -5,24 +5,24 @@ const Resume = () => {
   return (
     <main className={s.section_resume}>
       <div className={`container ${s.resume}`}>
-        <h1>Resume</h1>
-        <section>
-          <h2>Work Experience</h2>
-          <ul>
-            <li>
-              <h3>Climbing coach, Kharkiv</h3>
-              <p>2019-2022</p>
-              <p>
+        <h1 className={s.title_page}>Resume</h1>
+        <section className={s.block}>
+          <h2 className={s.block_title}>Work Experience</h2>
+          <ul className={s.block_list}>
+            <li className={s.block_item}>
+              <h3 className={s.item_title}>Climbing coach, Kharkiv</h3>
+              <p className={s.item_years}>2019-2022</p>
+              <p className={s.item_text}>
                 Developed an exercise program for clients. Conducted group and
                 individual trainings. Conducted individual training with about
                 100 clients, 60% achieved corresponding success.Worked with
                 professional athlete and other coaches.
               </p>
             </li>
-            <li>
-              <h3>Travel organizer, Kharkiv</h3>
-              <p>2019-2022</p>
-              <p>
+            <li className={s.block_item}>
+              <h3 className={s.item_title}>Travel organizer, Kharkiv</h3>
+              <p className={s.item_years}>2019-2022</p>
+              <p className={s.item_text}>
                 Compiled a travel program for kayaking, climbing, hiking and
                 skiing. I bought tickets, created programs for recreation, and
                 as a result of all the trips, no one had any injuries.
@@ -30,56 +30,76 @@ const Resume = () => {
             </li>
           </ul>
         </section>
-        <section>
-          <h2>Education</h2>
 
-          <ul>
-            <li>
-              <h3>IT school GoIT</h3>
-              <p>2022-2023</p>
-              <p>FullStack Developer</p>
+        <section className={s.block}>
+          <h2 className={s.block_title}>Education</h2>
+          <ul className={s.block_list}>
+            <li className={s.block_item}>
+              <h3 className={s.item_title}>IT school GoIT</h3>
+              <p className={s.item_years}>2022-2023</p>
+              <p className={s.item_text}>FullStack Developer</p>
             </li>
-            <li>
-              <h3>Yaroslav Mudryi National Law University</h3>
-              <p>2015-2021</p>
-              <p>Corporative law. Master's degree</p>
+            <li className={s.block_item}>
+              <h3 className={s.item_title}>
+                Yaroslav Mudryi National Law University
+              </h3>
+              <p className={s.item_years}>2015-2021</p>
+              <p className={s.item_text}>Corporative law. Master's degree</p>
             </li>
-            <li>
-              <h3>Kherson State University</h3>
-              <p>2017-2021</p>
-              <p>Physical education and sport. Bachelor's degree</p>
+            <li className={s.block_item}>
+              <h3 className={s.item_title}>Kherson State University</h3>
+              <p className={s.item_years}>2017-2021</p>
+              <p className={s.item_text}>
+                Physical education and sport. Bachelor's degree
+              </p>
             </li>
           </ul>
         </section>
-        <section>
-          <h2>Tech Skills</h2>
-          <ul>
-            <li>HTML5/CSS3/SASS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Rest API</li>
-            <li>Parcel</li>
-            <li>Webpack</li>
-            <li>Node.js</li>
+        <section className={s.block}>
+          <h2 className={s.block_title}>Tech Skills</h2>
+          <ul className={s.block_list}>
+            <li className={` ${s.item_title} ${s.skills_title}`}>
+              HTML5/CSS3/SASS
+            </li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>JavaScript</li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>React</li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>Redux</li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>Rest API</li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>Parcel</li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>Webpack</li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>Node.js</li>
           </ul>
         </section>
-        <section>
-          <h2>Soft Skills</h2>
-          <ul>
-            <li>Teamwork</li>
-            <li>Time management</li>
-            <li>Eager to learn</li>
-            <li>Broad-minded</li>
-            <li>Communicative skills</li>
-            <li>Responsibility</li>
+        <section className={s.block}>
+          <h2 className={s.block_title}>Soft Skills</h2>
+          <ul className={s.block_list}>
+            <li className={` ${s.item_title} ${s.skills_title}`}>Teamwork</li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>
+              Time management
+            </li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>
+              Eager to learn
+            </li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>
+              Broad-minded
+            </li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>
+              Communicative skills
+            </li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>
+              Responsibility
+            </li>
           </ul>
         </section>
-        <section>
-          <h2>Languages</h2>
-          <ul>
-            <li>English - Intermediate</li>
-            <li>Ukrainian - Native</li>
+        <section className={s.block}>
+          <h2 className={s.block_title}>Languages</h2>
+          <ul className={s.block_list}>
+            <li className={` ${s.item_title} ${s.skills_title}`}>
+              English - Intermediate
+            </li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>
+              Ukrainian - Native
+            </li>
           </ul>
         </section>
       </div>
