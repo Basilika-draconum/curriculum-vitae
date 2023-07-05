@@ -3,6 +3,7 @@ import s from "./header.module.scss";
 import burger from "../../images/icons/menu.svg";
 // import sprite from "../../images/icons/common.svg";
 import { ReactSVG } from "react-svg";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -24,12 +25,20 @@ const Header = () => {
             onClick={() => handleOpenModal()}>
             <ReactSVG src={burger} />
           </button>
-          <ul className={s.navigation_list}>
-            <li className={s.navigation_item}>about me</li>
-            <li className={s.navigation_item}>resume</li>
-            <li className={s.navigation_item}>projects</li>
-            <li className={s.navigation_item}>contact</li>
-          </ul>
+          <nav className={s.navigation_list}>
+            <NavLink className={s.navigation_item} to="/">
+              about me
+            </NavLink>
+            <NavLink className={s.navigation_item} to="/resume">
+              resume
+            </NavLink>
+            <NavLink className={s.navigation_item} to="/projects">
+              projects
+            </NavLink>
+            <NavLink className={s.navigation_item} to="/contact">
+              contact
+            </NavLink>
+          </nav>
         </nav>
       </div>
     </header>
