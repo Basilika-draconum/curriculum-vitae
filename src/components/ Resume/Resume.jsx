@@ -3,10 +3,10 @@ import s from "./resume.module.scss";
 
 const Resume = () => {
   return (
-    <main className={s.section_resume}>
+    <section className={s.section_resume}>
       <div className={`container ${s.resume}`}>
-        <h1 className={s.title_page}>Resume</h1>
-        <section className={s.block}>
+        <h1 className="title_page">Resume</h1>
+        <div className={s.block}>
           <h2 className={s.block_title}>Work Experience</h2>
           <ul className={s.block_list}>
             <li className={s.block_item}>
@@ -29,9 +29,9 @@ const Resume = () => {
               </p>
             </li>
           </ul>
-        </section>
+        </div>
 
-        <section className={s.block}>
+        <div className={s.block}>
           <h2 className={s.block_title}>Education</h2>
           <ul className={s.block_list}>
             <li className={s.block_item}>
@@ -54,8 +54,8 @@ const Resume = () => {
               </p>
             </li>
           </ul>
-        </section>
-        <section className={s.block}>
+        </div>
+        <div className={s.block}>
           <h2 className={s.block_title}>Tech Skills</h2>
           <ul className={s.block_list}>
             <li className={` ${s.item_title} ${s.skills_title}`}>
@@ -69,8 +69,8 @@ const Resume = () => {
             <li className={` ${s.item_title} ${s.skills_title}`}>Webpack</li>
             <li className={` ${s.item_title} ${s.skills_title}`}>Node.js</li>
           </ul>
-        </section>
-        <section className={s.block}>
+        </div>
+        <div className={s.block}>
           <h2 className={s.block_title}>Soft Skills</h2>
           <ul className={s.block_list}>
             <li className={` ${s.item_title} ${s.skills_title}`}>Teamwork</li>
@@ -90,8 +90,8 @@ const Resume = () => {
               Responsibility
             </li>
           </ul>
-        </section>
-        <section className={s.block}>
+        </div>
+        <div className={s.block}>
           <h2 className={s.block_title}>Languages</h2>
           <ul className={s.block_list}>
             <li className={` ${s.item_title} ${s.skills_title}`}>
@@ -101,9 +101,9 @@ const Resume = () => {
               Ukrainian - Native
             </li>
           </ul>
-        </section>
+        </div>
       </div>
-    </main>
+    </section>
   );
 };
 

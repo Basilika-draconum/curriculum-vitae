@@ -1,10 +1,11 @@
 import React from "react";
 import s from "./intro.module.scss";
 import photo from "../../images/Photo.jpeg";
+import { NavLink } from "react-router-dom";
 
 const Intro = () => {
   return (
-    <main className={s.section_intro}>
+    <section className={s.section_intro}>
       <div className={`container ${s.intro}`}>
         <img
           className={s.photo}
@@ -26,19 +27,19 @@ const Intro = () => {
           </div>
           <ul className={s.switch}>
             <li className={s.switch_resume}>
-              <a className={s.switch_resumeBtn} href="http://">
+              <NavLink className={s.switch_resumeBtn} to="/resume">
                 resume
-              </a>
+              </NavLink>
             </li>
             <li className={s.switch_projects}>
-              <a className={s.switch_projectsBtn} href="http://">
+              <NavLink className={s.switch_projectsBtn} to="/projects">
                 projects
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

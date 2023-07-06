@@ -51,3 +51,15 @@ a{
   stroke: currentColor;
   fill: currentColor;
 }
+.title_page {
+  font-size: 40px;
+  line-height: 49px;
+  color: var(--color-accent);
+  margin: 0 auto;
+  margin-bottom: 56px;
+
+  @media screen and (min-width:768px) {
+    font-size: 64px;
+    line-height: 78px;
+  }
+}

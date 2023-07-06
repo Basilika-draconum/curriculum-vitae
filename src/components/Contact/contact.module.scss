@@ -1,0 +1,33 @@
+.section_contact {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    background-color: var(--bgColor-primary);
+
+    @media screen and (min-width: 768px) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    }
+}
+.block{
+    padding: 0 24px 24px 24px;
+    background-color: white;
+}
+.contact_info{
+    background-color: var(--bgColor-accent);
+    color:var(--color-white);
+    border-radius: 0px 0px 8px 8px;
+    padding: 26px 27px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.contact_list{
+    list-style: none;
+}
+.contact_item{
+    font-size: 24px;
+    margin-top: 32px;
+}
+.contact_title{
+
+}
+.contact_tel{}
