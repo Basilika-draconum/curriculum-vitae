@@ -1,4 +1,8 @@
 import React from "react";
+
+import { ReactComponent as Telegram } from "../../images/icons/telegram.svg";
+import { ReactComponent as Linkedin } from "../../images/icons/linkedin.svg";
+import { ReactComponent as Github } from "../../images/icons/github.svg";
 import s from "./contact.module.scss";
 
 const Contact = () => {
@@ -25,14 +29,14 @@ const Contact = () => {
             </li>
             <li className={s.contact_item}>
               <h2 className={s.contact_title}>Find me on</h2>
-              {/* <ul className={s.list_link}>
+              <ul className={s.list_link}>
                 <li className={s.item_link}>
                   <a
                     className={s.item_link_telegram}
                     href="https://t.me/Lika_Basilika"
                     target="_blank"
                     rel="noopener noreferrer">
-                    <ReactSVG src={telegram} width={40} height={40} />
+                    <Telegram className={s.telegram} />
                   </a>
                 </li>
                 <li className={s.item_link}>
@@ -41,7 +45,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/lika-basilika/"
                     target="_blank"
                     rel="noopener noreferrer">
-                    <ReactSVG src={linkedin} />
+                    <Linkedin className={s.linkedin} />
                   </a>
                 </li>
                 <li className={s.item_link}>
@@ -50,12 +54,17 @@ const Contact = () => {
                     href="https://github.com/Basilika-draconum"
                     target="_blank"
                     rel="noopener noreferrer">
-                    <ReactSVG src={github} />
+                    <Github className={s.github} />
                   </a>
                 </li>
-              </ul> */}
+              </ul>
             </li>
           </ul>
+          <div className={s.wrap_download}>
+            <button type="button" className={s.download}>
+              download cv
+            </button>
+          </div>
         </div>
       </div>
     </section>
