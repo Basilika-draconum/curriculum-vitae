@@ -20,7 +20,6 @@ function App() {
         </Route>
         <Route path="*" element={<AboutPage />} />
       </Routes>
-      ;
     </Suspense>
   );
 }

@@ -12,7 +12,7 @@
   --color-white:#ffffff;
   --textColor: #1D1C1C;
   --bgColor-primary:  #F7F7F7;
-  --bgColor-accent: #E6DACE;
+  --bgColor-subtitle: #E6DACE;
   --color-accent:  #308B8E;
   --color-accent-hover:#78B4B6;
   --bgColor-accent: #FF8D8D;
@@ -37,25 +37,25 @@ body {
 
   @media screen and (min-width: 1200px) {
     max-width: 1440px;
-    padding: 0 32px;
+    padding: 0 128px;
   }
 }
 a{
   text-decoration: none;
 }
-.icon {
+/* .icon {
   display: inline-block;
   width: 1em;
   height: 1em;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-}
+} */
 .title_page {
   font-size: 40px;
   line-height: 49px;
   color: var(--color-accent);
-  margin: 0 auto;
+  text-align: center;
   margin-bottom: 56px;
 
   @media screen and (min-width:768px) {

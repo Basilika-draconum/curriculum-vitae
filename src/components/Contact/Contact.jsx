@@ -11,9 +11,12 @@ const Contact = () => {
       <div className={`container ${s.contact}`}>
         <h1 className="title_page">Contact</h1>
         <div className={s.block}>
-          <p className={s.contact_info}>
-            Get in touch with me so we can collaborate on your next project!
-          </p>
+          <div className={s.contact_info_wrap}>
+            <p className={s.contact_info}>
+              Get in touch with me so we can collaborate on your next project!
+            </p>
+          </div>
+
           <ul className={s.contact_list}>
             <li className={s.contact_item}>
               <h2 className={s.contact_title}>Phone:</h2>
@@ -27,8 +30,8 @@ const Contact = () => {
                 14basilika@gmail.com
               </a>
             </li>
-            <li className={s.contact_item}>
-              <h2 className={s.contact_title}>Find me on</h2>
+            <li className={`${s.contact_item} ${s.contact_item_find}`}>
+              <h2 className={s.contact_find}>Find me on</h2>
               <ul className={s.list_link}>
                 <li className={s.item_link}>
                   <a
@@ -36,7 +39,7 @@ const Contact = () => {
                     href="https://t.me/Lika_Basilika"
                     target="_blank"
                     rel="noopener noreferrer">
-                    <Telegram className={s.telegram} />
+                    <Telegram className={s.icons} />
                   </a>
                 </li>
                 <li className={s.item_link}>
@@ -45,7 +48,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/lika-basilika/"
                     target="_blank"
                     rel="noopener noreferrer">
-                    <Linkedin className={s.linkedin} />
+                    <Linkedin className={s.icons} />
                   </a>
                 </li>
                 <li className={s.item_link}>
@@ -54,7 +57,7 @@ const Contact = () => {
                     href="https://github.com/Basilika-draconum"
                     target="_blank"
                     rel="noopener noreferrer">
-                    <Github className={s.github} />
+                    <Github className={s.icons} />
                   </a>
                 </li>
               </ul>
