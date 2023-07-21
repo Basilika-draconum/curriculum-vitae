@@ -60,19 +60,29 @@
         background-color: var(--bgColor-subtitle);
         border-radius: 0px 0px 8px 8px;
         padding: 20px 59px;
+        @media screen and (min-width:768px){
+            width: 380px;
+            padding: 28px 69px;
+        }
+        @media screen and (min-width:1200px) {
+
+        }
+
     }
     &_icon{
         display: block;
         width: 32px;
         height: 32px;
         fill: var(--textColor);
-        margin-left: 16px;
+        margin-left: 10px;
     }
 }
 .title{
     font-size: 24px;
     font-weight: 600;
-    
+    @media screen and (min-width:768px) {
+        font-size: 28px;
+    }
 }
 .library{
     color:var(--color-accent);
@@ -87,6 +97,15 @@
 }
 .picture{
     margin-top: 32.5px;
+    width: 300px;
+    @media screen and (min-width:768px){
+        width: 584px;
+        height: 301px;
+    }
+    @media screen and (min-width:1200px){
+        width: 756px;
+        height: 301px;
+    }
 }
 .wrapBtn{
     margin-top: 31.5px;
@@ -94,15 +113,13 @@
     justify-content: center;
     align-items: center;
     gap:16px;
+    list-style-type: none;
 }
 .btn{
     padding: 8px 47.5px;
-    color: var(--color-white);
     background-color: var(--color-accent);
     border: 1px solid var(--color-accent);
     border-radius: 8px;
-    font-size: 16px;
-    font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
     &_view {
@@ -112,13 +129,24 @@
         }
     }
     &_github{
-        color: var(--color-accent);
         background-color: transparent;
         padding: 8px 38px;
         &:hover {
             background-color: var(--color-white);
             border: 1px solid #78B4B6;
-            color: #78B4B6;
         }
     }
+}
+.linkView{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-white); 
+}
+.linkGitHub{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-accent);
+    &:hover {
+            color: #78B4B6;
+        }
 }

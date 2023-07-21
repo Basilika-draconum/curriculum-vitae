@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { client, urlFor } from "../../client";
 
 import { ReactComponent as Solo } from "../../images/icons/people solo.svg";
 import { ReactComponent as Group } from "../../images/icons/people team.svg";
-import app from "../../images/mobileapp 380.jpeg";
 import s from "./projects.module.scss";
 const Projects = () => {
+  const [projectData, setProjectData] = useState(null);
+
+  useEffect(() => {
+    client
+      .fetch('*[_type=="project"]')
+      .then((data) => setProjectData(data))
+      .catch(console.error);
+  }, []);
+
   return (
     <section className={s.section_projects}>
       <div className={`container ${s.projects}`}>
         <h1 className="title_page">Projects</h1>
-        <form>
+        {/* <form>
           <fieldset className={s.radio}>
             <div className={s.radio_item}>
               <input
@@ -51,24 +60,27 @@ const Projects = () => {
               <Group className={s.icon_proj} />
             </div>
           </fieldset>
-        </form>
-
-        <div className={s.block}>
-          <div className={s.block_title}>
-            <h2 className={s.title}>MobileApp</h2>
-            <Solo className={s.block_icon} />
-          </div>
-          <h3 className={s.library}>HTML5, CSS, SASS, JavaScript, Parcel</h3>
-          <p className={s.description}>
-            Modern responsive landing page with adaptive layouts design, modal
-            windows and attractive design. Role: scrum-master, developer.
-          </p>
-          <img src={app} alt="mobileapp" className={s.picture} />
-          <div className={s.wrapBtn}>
-            <button className={`${s.btn} ${s.btn_view}`}>view</button>
-            <button className={`${s.btn} ${s.btn_github}`}>github</button>
-          </div>
-        </div>
+         </form> */}
+        {projectData &&
+          projectData.map((project, index) => (
+            <div className={s.block} key={project._id}>
+              <div className={s.block_title}>
+                <h2 className={s.title}>{project.title}</h2>
+                {( project.projectType  === "group") ? <Group className={s.block_icon}/> : <Solo className={s.block_icon} />}
+              </div>
+              <h3 className={s.library}>{project.library}</h3>
+              <p className={s.description}>{project.description}</p>
+              <img src={urlFor(project.image).url()} alt={project.image.alt} className={s.picture} />
+              <ul className={s.wrapBtn}>
+                <li  className={`${s.btn} ${s.btn_view}`}>
+                  <a  className={s.linkView} href={project.liveLink} target="_blank" rel="noopener noreferrer">view</a>
+                </li>
+                <li  className={`${s.btn} ${s.btn_github}`}>
+                  <a className={s.linkGitHub} href={project.liveLink} target="_blank" rel="noopener noreferrer">github</a>
+                </li>
+              </ul>
+            </div>
+          ))}
       </div>
     </section>
   );
