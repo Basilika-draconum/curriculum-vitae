@@ -2,13 +2,24 @@
     background-color: var(--bgColor-primary);
     padding-top: 56px;
     padding-bottom: 56px;
+    @media screen and (min-width: 768px){
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
 }
 
 .block{
     background-color: var(--color-white);
     padding: 0 24px 24px;
     margin-bottom: 48px;
+    box-shadow: 4px 6px 8px 0px rgba(0, 0, 0, 0.25);
 
+    @media screen and (min-width: 768px) {
+        padding: 0 60px 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 0 96px 96px;
+    }
     &_title{
         background-color: var(--bgColor-accent);
         font-weight: 600;
@@ -17,6 +28,10 @@
         padding: 20px;
         border-radius: 0px 0px 8px 8px;
         color: var(--color-white);
+        @media screen and (min-width:768px){
+            width: 380px;
+            padding: 28px 69px;
+        }
     }
     &_list{
         list-style-type: none;

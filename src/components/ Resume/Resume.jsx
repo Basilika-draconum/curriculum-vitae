@@ -1,33 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { client } from "../../client";
 import s from "./resume.module.scss";
 
 const Resume = () => {
+const [experienceData, setExperienceData] = useState(null);
+
+  useEffect(() => {
+    client
+      .fetch('*[_type=="experience"]')
+      .then((data) => setExperienceData(data))
+      .catch(console.error);
+  }, []);
+
   return (
     <section className={s.section_resume}>
       <div className={`container ${s.resume}`}>
         <h1 className="title_page">Resume</h1>
         <div className={s.block}>
           <h2 className={s.block_title}>Work Experience</h2>
-          <ul className={s.block_list}>
-            <li className={s.block_item}>
-              <h3 className={s.item_title}>Climbing coach, Kharkiv</h3>
-              <p className={s.item_years}>2019-2022</p>
-              <p className={s.item_text}>
-                Developed an exercise program for clients. Conducted group and
-                individual trainings. Conducted individual training with about
-                100 clients, 60% achieved corresponding success.Worked with
-                professional athlete and other coaches.
-              </p>
-            </li>
-            <li className={s.block_item}>
-              <h3 className={s.item_title}>Travel organizer, Kharkiv</h3>
-              <p className={s.item_years}>2019-2022</p>
-              <p className={s.item_text}>
-                Compiled a travel program for kayaking, climbing, hiking and
-                skiing. I bought tickets, created programs for recreation, and
-                as a result of all the trips, no one had any injuries.
-              </p>
-            </li>
+            <ul className={s.block_list}>
+            {experienceData &&
+              experienceData.map((item) => (
+                <li className={s.block_item} key={experienceData._id}>
+                  <h3 className={s.item_title}>{item.title}</h3>
+                  <p className={s.item_years}>{item.year}</p>
+                  <p className={s.item_text}>
+                    {item.description}
+                  </p>
+                </li>))}
           </ul>
         </div>
 

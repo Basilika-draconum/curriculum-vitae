@@ -3,5 +3,6 @@ import blockContent from './blockContent'
 import post from './post'
 import project from './project'
 import author from './author'
+import experience from './experience'
 
-export const schemaTypes = [post, author, project, blockContent]
+export const schemaTypes = [post, author, project, experience, blockContent]

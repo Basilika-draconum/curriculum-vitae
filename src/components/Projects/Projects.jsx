@@ -62,7 +62,7 @@ const Projects = () => {
           </fieldset>
          </form> */}
         {projectData &&
-          projectData.map((project, index) => (
+          projectData.map((project) => (
             <div className={s.block} key={project._id}>
               <div className={s.block_title}>
                 <h2 className={s.title}>{project.title}</h2>
