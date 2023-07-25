@@ -1,15 +1,19 @@
 import React, { useState } from "react";
-import s from "./header.module.scss";
-import burger from "../../images/icons/menu.svg";
-// import sprite from "../../images/icons/common.svg";
+
 import { ReactSVG } from "react-svg";
 import { NavLink } from "react-router-dom";
+import Modal from "../Modal/Modal"
+import s from "./header.module.scss";
+import burger from "../../images/icons/menu.svg";
+import x from "../../images/icons/x.svg";
+
 
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
 
   const handleOpenModal = () => {
     setOpenModal(!openModal);
+     document.body.style.overflow = 'hidden'
   };
   return (
     <header className={s.section_header}>
@@ -23,7 +27,7 @@ const Header = () => {
           <button
             className={s.navigation_burger}
             onClick={() => handleOpenModal()}>
-            <ReactSVG src={burger} />
+            {openModal?<ReactSVG src={x}/>:<ReactSVG src={burger} /> }
           </button>
           <nav className={s.navigation_list}>
             <NavLink className={s.navigation_item} to="/">
@@ -41,7 +45,9 @@ const Header = () => {
           </nav>
         </nav>
       </div>
+      {openModal && <Modal openModal={openModal} />} 
     </header>
+    
   );
 };
 
