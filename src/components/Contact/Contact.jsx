@@ -38,7 +38,8 @@ const Contact = () => {
                     className={s.item_link_telegram}
                     href="https://t.me/Lika_Basilika"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                  >
                     <Telegram className={s.icons} />
                   </a>
                 </li>
@@ -47,7 +48,8 @@ const Contact = () => {
                     className={s.item_link_linkedin}
                     href="https://www.linkedin.com/in/lika-basilika/"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                  >
                     <Linkedin className={s.icons} />
                   </a>
                 </li>
@@ -56,7 +58,8 @@ const Contact = () => {
                     className={s.item_link_git}
                     href="https://github.com/Basilika-draconum"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                  >
                     <Github className={s.icons} />
                   </a>
                 </li>

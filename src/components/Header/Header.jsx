@@ -31,7 +31,7 @@ const Header = () => {
   });
   return (
     <header className={s.section_header}>
-      <div className={`container ${s.header}`}>
+      <div className={ s.header}>
         <div className={s.info}>
           <h1 className={s.title}>Dubinenko Anzhelika</h1>
           <p className={s.position_slash}>/</p>
@@ -63,6 +63,7 @@ const Header = () => {
         </nav>
       </div>
       {openModal && <Modal closeModal={handleCloseModal} />}
+      <div className={s.header_line}></div>
     </header>
   );
 };

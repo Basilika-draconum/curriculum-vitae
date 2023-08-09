@@ -3,7 +3,6 @@ import React from "react";
 import s from "./resume.module.scss";
 
 const Resume = () => {
-
   return (
     <section className={s.section_resume}>
       <div className={`container ${s.resume}`}>

@@ -10,7 +10,8 @@ import github from "../../images/icons/github.svg";
 const Footer = () => {
   return (
     <footer className={s.section_footer}>
-      <div className={`container ${s.footer}`}>
+      <div className={s.footer}>
+        <div className={s.footer_line}></div>
         <p className={s.footer_secured}>
           &#169; 2035 Anzhelika Dubinenko.
           <br className={s.footer_secured_br} /> Powered and secured by myself
@@ -36,7 +37,8 @@ const Footer = () => {
                   className={s.item_link_telegram}
                   href="https://t.me/Lika_Basilika"
                   target="_blank"
-                  rel="noopener noreferrer">
+                  rel="noopener noreferrer"
+                >
                   {/* <svg className="icon icon-telegram">
                     <use href={sprite + "#icon-telegram"} />
                   </svg> */}
@@ -49,7 +51,8 @@ const Footer = () => {
                   className={s.item_link_linkedin}
                   href="https://www.linkedin.com/in/lika-basilika/"
                   target="_blank"
-                  rel="noopener noreferrer">
+                  rel="noopener noreferrer"
+                >
                   <ReactSVG src={linkedin} />
                 </a>
               </li>
@@ -58,7 +61,8 @@ const Footer = () => {
                   className={s.item_link_git}
                   href="https://github.com/Basilika-draconum"
                   target="_blank"
-                  rel="noopener noreferrer">
+                  rel="noopener noreferrer"
+                >
                   <ReactSVG src={github} />
                 </a>
               </li>
