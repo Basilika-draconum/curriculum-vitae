@@ -1,0 +1,66 @@
+.radio {
+  display: flex;
+  gap: 25px;
+  border: transparent;
+
+  @media screen and (min-width: 768px) {
+    gap: 24px;
+  }
+
+  &_item {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+  }
+
+  &_input {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #308b8e;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+    @media screen and (min-width: 768px) {
+      margin-right: 12px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #308b8e;
+      opacity: 0;
+      transition: opacity 0.1s ease-in-out;
+    }
+    &:checked::before {
+      opacity: 1;
+    }
+  }
+
+  &_label {
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+}
+.icon_proj {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: var(--color-accent);
+  margin-left: 6px;
+  @media screen and (min-width: 768px) {
+    margin-left: 8px;
+  }
+}
