@@ -60,12 +60,15 @@
 }
 .picture {
   margin-top: 32.5px;
+  display: block;
   width: 300px;
   @media screen and (min-width: 768px) {
     width: 584px;
     height: 301px;
   }
   @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
     width: 756px;
     height: 301px;
   }
