@@ -2,6 +2,7 @@
     padding-top: 16.5px;
     padding-bottom: 16.5px;
     
+    
     @media screen and (min-width:768px) {
         padding-top: 33.5px ;
         padding-bottom: 33.5px;
@@ -73,9 +74,6 @@
             display: flex;
             list-style-type: none;
             gap: 21.67px;}
-
-    }
-    &_item{
 
     }
 }

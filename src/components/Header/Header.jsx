@@ -1,20 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { ReactSVG } from "react-svg";
 import { NavLink } from "react-router-dom";
-import Modal from "../Modal/Modal"
+import Modal from "../Modal/Modal";
 import s from "./header.module.scss";
 import burger from "../../images/icons/menu.svg";
 import x from "../../images/icons/x.svg";
-
 
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
 
   const handleOpenModal = () => {
-    setOpenModal(!openModal);
-     document.body.style.overflow = 'hidden'
+    setOpenModal(true);
+    document.body.style.overflow = "hidden";
   };
+  const handleCloseModal = () => {
+    setOpenModal(false);
+    document.body.style.overflow = "scroll";
+  };
+  const handleKeyDown = (event) => {
+    if (event.code === "Escape") {
+      handleCloseModal();
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  });
   return (
     <header className={s.section_header}>
       <div className={`container ${s.header}`}>
@@ -26,8 +40,11 @@ const Header = () => {
         <nav className={s.navigation}>
           <button
             className={s.navigation_burger}
-            onClick={() => handleOpenModal()}>
-            {openModal?<ReactSVG src={x}/>:<ReactSVG src={burger} /> }
+            onClick={
+              openModal ? () => handleCloseModal() : () => handleOpenModal()
+            }
+          >
+            {openModal ? <ReactSVG src={x} /> : <ReactSVG src={burger} />}
           </button>
           <nav className={s.navigation_list}>
             <NavLink className={s.navigation_item} to="/">
@@ -45,9 +62,8 @@ const Header = () => {
           </nav>
         </nav>
       </div>
-      {openModal && <Modal openModal={openModal} />} 
+      {openModal && <Modal closeModal={handleCloseModal} />}
     </header>
-    
   );
 };
 
