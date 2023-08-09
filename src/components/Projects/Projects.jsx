@@ -56,7 +56,7 @@ const Projects = () => {
                 <li className={`${s.btn} ${s.btn_github}`}>
                   <a
                     className={s.linkGitHub}
-                    href={project.liveLink}
+                    href={project.codeLink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
