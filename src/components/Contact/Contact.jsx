@@ -67,9 +67,9 @@ const Contact = () => {
             </li>
           </ul>
           <div className={s.wrap_download}>
-            <button type="button" className={s.download}>
+            <a href="https://drive.google.com/file/d/1e7A8Ha-FGemjlxBzfxIs5mw_vbVvlUHT/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={s.download}>
               download cv
-            </button>
+            </a>
           </div>
         </div>
       </div>
