@@ -7,6 +7,7 @@ import s from "./projects.module.scss";
 import Filter from "../Filter/Filter";
 const Projects = () => {
   const [projectData, setProjectData] = useState(null);
+  const [filter, setFilter] = useState("all");
 
   useEffect(() => {
     client
@@ -16,16 +17,29 @@ const Projects = () => {
   }, []);
 
   const handleFilterChange = (filter) => {
-    // Оновлюйте дані або список в залежності від обраного фільтра (filter)
-    console.log("Selected filter:", filter);
+    setFilter(filter);
   };
+  const filterProjects = (projects, filter) => {
+    return projects.filter((project) => {
+      if (filter === "all") {
+        return true;
+      } else if (filter === "solo" && project.type === "solo") {
+        return true;
+      } else if (filter === "group" && project.type === "group") {
+        return true;
+      }
+      return false;
+    });
+  };
+  const filteredProjects = filterProjects(projectData, filter);
+  
   return (
     <section className={s.section_projects}>
       <div className={`container ${s.projects}`}>
         <h1 className="title_page">Projects</h1>
         <Filter onChangeFilter={handleFilterChange} />
         {projectData &&
-          projectData.map((project) => (
+          filteredProjects.map((project) => (
             <div className={s.block} key={project._id}>
               <div className={s.block_title}>
                 <h2 className={s.title}>{project.title}</h2>
