@@ -63,3 +63,7 @@ a{
     line-height: 78px;
   }
 }
+
+.active {
+  font-weight: 700;
+}
