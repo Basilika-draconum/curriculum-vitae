@@ -47,6 +47,12 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+.certificate {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-accent);
+  text-transform: capitalize;
+}
 .item_years {
   margin-top: 4px;
   margin-bottom: 16px;

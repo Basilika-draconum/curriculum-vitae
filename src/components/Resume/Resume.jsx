@@ -36,7 +36,18 @@ const Resume = () => {
           <h2 className={s.block_title}>Education</h2>
           <ul className={s.block_list}>
             <li className={s.block_item}>
-              <h3 className={s.item_title}>IT school GoIT</h3>
+              <h3 className={s.item_title}>
+                IT school GoIT{" "}
+                <a
+                  className={s.certificate}
+                  href="https://drive.google.com/file/d/1SJ5O0wLHJYw8YJxsx7SmMcj5EVEMt507/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Certificate
+                </a>
+              </h3>
+
               <p className={s.item_years}>2022-2023</p>
               <p className={s.item_text}>FullStack Developer</p>
             </li>
