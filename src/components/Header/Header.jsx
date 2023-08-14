@@ -47,16 +47,16 @@ const Header = () => {
             {openModal ? <ReactSVG src={x} /> : <ReactSVG src={burger} />}
           </button>
           <nav className={s.navigation_list}>
-            <NavLink className={s.navigation_item} activeClassName={s.active} to="/">
+            <NavLink className={s.navigation_item} activeclassname={s.active} to="/">
               about me
             </NavLink>
-            <NavLink className={s.navigation_item} activeClassName={s.active} to="/resume">
+            <NavLink className={s.navigation_item} activeclassname={s.active} to="/resume">
               resume
             </NavLink>
-            <NavLink className={s.navigation_item} activeClassName={s.active} to="/projects">
+            <NavLink className={s.navigation_item} activeclassname={s.active} to="/projects">
               projects
             </NavLink>
-            <NavLink className={s.navigation_item} activeClassName={s.active} to="/contact">
+            <NavLink className={s.navigation_item} activeclassname={s.active} to="/contact">
               contact
             </NavLink>
           </nav>
