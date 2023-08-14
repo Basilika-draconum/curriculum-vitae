@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./intro.module.scss";
-import photo from "../../images/Photo.jpeg";
+import photo from "../../images/cut-photo.jpg";
 import { NavLink } from "react-router-dom";
 
 const Intro = () => {
@@ -11,8 +11,8 @@ const Intro = () => {
           className={s.photo}
           srcSet={photo}
           alt="Anzhelika Dubinenko"
-          width={338}
-          height={483}
+          width={166}
+          height={249}
         />
         <div className={s.intro_content}>
           <div className={s.content}>
