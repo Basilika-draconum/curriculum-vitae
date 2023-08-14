@@ -8,14 +8,20 @@
     position: absolute;
     top: 69px;
     left: 0;
-    width: 65%;
-    height: 42%;
+    width: 252px;
+    height: 288px;
     z-index: 0;
     background-color: var(--bgColor-subtitle);
-
+    @media screen and (min-width: 500px) {
+      width: 302px;
+    }
+    @media screen and (min-width: 600px) {
+      width: 372px;
+    }
     @media screen and (min-width: 768px) {
       top: 95px;
-      height: 89%;
+      height: 579px;
+      width: 65%;
     }
   }
 
