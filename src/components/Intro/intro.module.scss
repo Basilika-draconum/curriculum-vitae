@@ -128,7 +128,7 @@
     line-height: 21px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 16px;
+   
 
     @media screen and (min-width: 768px) {
       font-size: 22px;
@@ -140,6 +140,7 @@
   &_four {
     font-size: 14px;
     line-height: 17px;
+    margin-top: 16px;
     @media screen and (min-width: 768px) {
       font-size: 15px;
       line-height: 18px;

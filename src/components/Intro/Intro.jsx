@@ -19,11 +19,23 @@ const Intro = () => {
             <h2 className={s.content_first}>Hello,</h2>
             <h1 className={s.content_second}>I am Anzhelika Dubinenko</h1>
             <h2 className={s.content_third}>Junior frontend developer</h2>
-            <h3 className={s.content_four}>
-              I'm a Junior Frontend Developer looking for a full-time position
-              in a new company or team. I have basic knowledge and practical
-              experience of work with HTML, CSS, JavaScript, React, Redux.
-            </h3>
+            <p className={s.content_four}>
+              I'm a Junior Frontend Developer with a solid understanding of
+              fundamental concepts and technical aspects of HTML, CSS/SCSS,
+              JavaScript, React, Redux. My goal is to progress in the industry
+              and enhance my skills by crafting modern and high-quality web
+              applications with a friendly team.
+            </p>
+            <p className={s.content_four}>
+              I firmly uphold the belief that continuous developer growth is
+              paramount, and as such, I am dedicated to consistently refining my
+              programming capabilities while also honing my English language
+              proficiency.
+            </p>
+            <p className={s.content_four}>
+              I am genuinely excited about the opportunity to contribute my
+              frontend skills towards crafting impactful solutions.
+            </p>
           </div>
           <ul className={s.switch}>
             <li className={s.switch_resume}>

@@ -71,15 +71,15 @@ const Resume = () => {
           <h2 className={s.block_title}>Tech Skills</h2>
           <ul className={s.block_list}>
             <li className={` ${s.item_title} ${s.skills_title}`}>
-              HTML5/CSS3/SASS
+              HTML5 / CSS / SASS
             </li>
             <li className={` ${s.item_title} ${s.skills_title}`}>JavaScript</li>
             <li className={` ${s.item_title} ${s.skills_title}`}>React</li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>Redux</li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>Redux / Redux Toolkit</li>
             <li className={` ${s.item_title} ${s.skills_title}`}>Rest API</li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>Parcel</li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>Webpack</li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>Git / GitHub</li>
             <li className={` ${s.item_title} ${s.skills_title}`}>Node.js</li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>MongoDB</li>
           </ul>
         </div>
         <div className={s.block}>
