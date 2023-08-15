@@ -6,6 +6,16 @@
 
 #### My tech stack:
 
+- HTML5
+- CSS3/SASS
+- JavaScript
+- React
+- Redux/Redux Toolkit
+- REST API
+- Git, GitHub
+- Node.js
+- MongoDB
+
 #### My projects:
 
 - [Jukrassic Pork](https://www.pork.com.ua/) (**Commercial project**) - HTML5, SСSS, JAVASCRIPT, WEBPACK, REACT, SANITY, SWIPER
