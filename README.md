@@ -18,7 +18,9 @@
 
 #### My projects:
 
+- [CV]() - HTML5, SСSS, JAVASCRIPT, WEBPACK, REACT, SANITY,
 - [Jukrassic Pork](https://www.pork.com.ua/) (**Commercial project**) - HTML5, SСSS, JAVASCRIPT, WEBPACK, REACT, SANITY, SWIPER
+- [Cards-Tweets](https://basilika-draconum.github.io/cards-tweets/tweets)(Test Project) - HTML5, SСSS, REACT, REDUX/REDUX TOOLKIT
 - [Goose Track](https://basilika-draconum.github.io/goose-track/) (Team Project) - HTML5, SСSS, JAVASCRIPT, WEBPACK, REACT, REDUX/REDUX TOOLKIT
 - [Kapusta](https://polrmn.github.io/kapusta-app/login) (Team Project) - HTML5, SСSS, JAVASCRIPT, WEBPACK, REACT, REDUX/REDUX TOOLKIT
 - [Filmoteka](https://eugenenikiforov.github.io/movies-app/) (Team Project) - HTML5, SСSS, JAVASCRIPT, REST API, PARCEL
