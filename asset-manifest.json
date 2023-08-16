@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/curriculum-vitae/static/css/main.4bf56570.css",
+    "main.js": "/curriculum-vitae/static/js/main.6256c948.js",
+    "static/css/875.f13b26c2.chunk.css": "/curriculum-vitae/static/css/875.f13b26c2.chunk.css",
+    "static/js/875.0c03295e.chunk.js": "/curriculum-vitae/static/js/875.0c03295e.chunk.js",
+    "static/css/114.6d8c97c1.chunk.css": "/curriculum-vitae/static/css/114.6d8c97c1.chunk.css",
+    "static/js/114.a61b758e.chunk.js": "/curriculum-vitae/static/js/114.a61b758e.chunk.js",
+    "static/css/564.96c0c747.chunk.css": "/curriculum-vitae/static/css/564.96c0c747.chunk.css",
+    "static/js/564.22f4c143.chunk.js": "/curriculum-vitae/static/js/564.22f4c143.chunk.js",
+    "static/css/863.a91e36fd.chunk.css": "/curriculum-vitae/static/css/863.a91e36fd.chunk.css",
+    "static/js/863.1d63d421.chunk.js": "/curriculum-vitae/static/js/863.1d63d421.chunk.js",
+    "static/js/726.8dc76f34.chunk.js": "/curriculum-vitae/static/js/726.8dc76f34.chunk.js",
+    "static/js/690.9dca357a.chunk.js": "/curriculum-vitae/static/js/690.9dca357a.chunk.js",
+    "static/media/cut-photo.jpg": "/curriculum-vitae/static/media/cut-photo.59a6c002fae30da98598.jpg",
+    "static/media/people team.svg": "/curriculum-vitae/static/media/people team.965b7bbe7d5d50aa702ddc7eb7ab5145.svg",
+    "static/media/people solo.svg": "/curriculum-vitae/static/media/people solo.eb94fa5faba8bdc34f187b02e7c92802.svg",
+    "static/media/github.svg": "/curriculum-vitae/static/media/github.be5ffc000e0317a3ad30238d397c8bfb.svg",
+    "static/media/linkedin.svg": "/curriculum-vitae/static/media/linkedin.9e37b054f372c08ceb3b3fd51370dc80.svg",
+    "index.html": "/curriculum-vitae/index.html",
+    "static/media/telegram.svg": "/curriculum-vitae/static/media/telegram.e87933dca1748bf9cf97b2b3fd0ff418.svg",
+    "static/media/menu.svg": "/curriculum-vitae/static/media/menu.bd763d43e698c1745fe37d1601f92c25.svg",
+    "static/media/x.svg": "/curriculum-vitae/static/media/x.31a74893aa2fcd2d337aee4ea11cb2c3.svg",
+    "main.4bf56570.css.map": "/curriculum-vitae/static/css/main.4bf56570.css.map",
+    "main.6256c948.js.map": "/curriculum-vitae/static/js/main.6256c948.js.map",
+    "875.f13b26c2.chunk.css.map": "/curriculum-vitae/static/css/875.f13b26c2.chunk.css.map",
+    "875.0c03295e.chunk.js.map": "/curriculum-vitae/static/js/875.0c03295e.chunk.js.map",
+    "114.6d8c97c1.chunk.css.map": "/curriculum-vitae/static/css/114.6d8c97c1.chunk.css.map",
+    "114.a61b758e.chunk.js.map": "/curriculum-vitae/static/js/114.a61b758e.chunk.js.map",
+    "564.96c0c747.chunk.css.map": "/curriculum-vitae/static/css/564.96c0c747.chunk.css.map",
+    "564.22f4c143.chunk.js.map": "/curriculum-vitae/static/js/564.22f4c143.chunk.js.map",
+    "863.a91e36fd.chunk.css.map": "/curriculum-vitae/static/css/863.a91e36fd.chunk.css.map",
+    "863.1d63d421.chunk.js.map": "/curriculum-vitae/static/js/863.1d63d421.chunk.js.map",
+    "726.8dc76f34.chunk.js.map": "/curriculum-vitae/static/js/726.8dc76f34.chunk.js.map",
+    "690.9dca357a.chunk.js.map": "/curriculum-vitae/static/js/690.9dca357a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bf56570.css",
+    "static/js/main.6256c948.js"
+  ]
+}
