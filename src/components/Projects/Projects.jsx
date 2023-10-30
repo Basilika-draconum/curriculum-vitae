@@ -29,7 +29,7 @@ const Projects = () => {
     return projects.filter((project) => {
       if (filter === "all") {
         return true;
-      } else if (filter === "solo" && project.projectType === "solo") {
+      } else if (filter === "solo" && project.projectType === "individual") {
         return true;
       } else if (filter === "group" && project.projectType === "group") {
         return true;
