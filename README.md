@@ -8,6 +8,7 @@
 
 - HTML5
 - CSS3/SASS
+- Tailwind CSS
 - JavaScript
 - React
 - Redux/Redux Toolkit
@@ -18,6 +19,7 @@
 
 #### My projects:
 
+- [CarpTravel](https://carp-travel-eosin.vercel.app/)(Pet Project) - HTML5, CSS,Tailwind CSS, JAVASCRIPT, NEXT.JS, SWIPER, REACT-SCROLL, REACT-HOOK-FORM
 - [CV](https://basilika-draconum.github.io/curriculum-vitae/) - HTML5, SСSS, JAVASCRIPT, WEBPACK, REACT, SANITY,
 - [Notes App](https://basilika-draconum.github.io/notes-app-react/) (Test Project) - HTML5, SСSS, REACT, REDUX/REDUX TOOLKIT
 - [Jukrassic Pork](https://www.pork.com.ua/) (**Commercial project**) - HTML5, SСSS, JAVASCRIPT, WEBPACK, REACT, SANITY, SWIPER
