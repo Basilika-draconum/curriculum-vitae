@@ -1,6 +1,9 @@
 import React from "react";
-
 import s from "./resume.module.scss";
+
+const SkillItem = ({ skill }) => (
+  <li className={`${s.item_title} ${s.skills_title}`}>{skill}</li>
+);
 
 const Resume = () => {
   return (
@@ -31,7 +34,6 @@ const Resume = () => {
             </li>
           </ul>
         </div>
-
         <div className={s.block}>
           <h2 className={s.block_title}>Education</h2>
           <ul className={s.block_list}>
@@ -70,49 +72,42 @@ const Resume = () => {
         <div className={s.block}>
           <h2 className={s.block_title}>Tech Skills</h2>
           <ul className={s.block_list}>
-            <li className={` ${s.item_title} ${s.skills_title}`}>
-              HTML5 / CSS / SASS
-            </li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>Tailwind CSS</li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>JavaScript</li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>React.js</li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>Redux / Redux Toolkit</li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>Rest API</li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>Git / GitHub</li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>Node.js</li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>MongoDB</li>
+            {[
+              "HTML5 / CSS / SASS",
+              "Tailwind CSS",
+              "JavaScript",
+              "React.js",
+              "Redux / Redux Toolkit",
+              "Rest API",
+              "Git / GitHub",
+              "Node.js",
+              "MongoDB",
+            ].map((skill) => (
+              <SkillItem skill={skill} key={skill} />
+            ))}
           </ul>
         </div>
         <div className={s.block}>
           <h2 className={s.block_title}>Soft Skills</h2>
           <ul className={s.block_list}>
-            <li className={` ${s.item_title} ${s.skills_title}`}>Teamwork</li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>
-              Time management
-            </li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>
-              Eager to learn
-            </li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>
-              Broad-minded
-            </li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>
-              Communicative skills
-            </li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>
-              Responsibility
-            </li>
+            {[
+              "Teamwork",
+              "Time managment",
+              "Eager to learn",
+              "Broad-minded",
+              "Communicative skills",
+              " Responsibility",
+            ].map((skill) => (
+              <SkillItem skill={skill} key={skill} />
+            ))}
           </ul>
         </div>
         <div className={s.block}>
           <h2 className={s.block_title}>Languages</h2>
           <ul className={s.block_list}>
-            <li className={` ${s.item_title} ${s.skills_title}`}>
-              English - Intermediate
-            </li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>
-              Ukrainian - Native
-            </li>
+            {["English - Intermediate", "Ukrainian - Native"].map((skill) => (
+              <SkillItem skill={skill} key={skill} />
+            ))}
           </ul>
         </div>
       </div>

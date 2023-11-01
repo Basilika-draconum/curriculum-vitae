@@ -1,5 +1,4 @@
 import React from "react";
-
 import { ReactComponent as Telegram } from "../../images/icons/telegram.svg";
 import { ReactComponent as Linkedin } from "../../images/icons/linkedin.svg";
 import { ReactComponent as Github } from "../../images/icons/github.svg";
@@ -9,14 +8,13 @@ const Contact = () => {
   return (
     <section className={s.section_contact}>
       <div className={`container ${s.contact}`}>
-        <h1 className="title_page">Contact</h1>
+        <h1 className="title_page">Contacts</h1>
         <div className={s.block}>
           <div className={s.contact_info_wrap}>
             <p className={s.contact_info}>
-              Get in touch with me so we can collaborate on your next project!
+              Get in touch with me so I can collaborate on your next project!
             </p>
           </div>
-
           <ul className={s.contact_list}>
             <li className={s.contact_item}>
               <h2 className={s.contact_title}>Phone:</h2>
@@ -67,7 +65,12 @@ const Contact = () => {
             </li>
           </ul>
           <div className={s.wrap_download}>
-            <a href="https://drive.google.com/file/d/1e7A8Ha-FGemjlxBzfxIs5mw_vbVvlUHT/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={s.download}>
+            <a
+              href="https://drive.google.com/file/d/1e7A8Ha-FGemjlxBzfxIs5mw_vbVvlUHT/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={s.download}
+            >
               download cv
             </a>
           </div>

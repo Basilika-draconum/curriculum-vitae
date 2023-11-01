@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import { ReactSVG } from "react-svg";
 import { NavLink } from "react-router-dom";
 import Modal from "../Modal/Modal";
@@ -31,7 +30,7 @@ const Header = () => {
   });
   return (
     <header className={s.section_header}>
-      <div className={ s.header}>
+      <div className={s.header}>
         <div className={s.info}>
           <h1 className={s.title}>Dubinenko Anzhelika</h1>
           <p className={s.position_slash}>/</p>
@@ -47,17 +46,33 @@ const Header = () => {
             {openModal ? <ReactSVG src={x} /> : <ReactSVG src={burger} />}
           </button>
           <nav className={s.navigation_list}>
-            <NavLink className={s.navigation_item} activeclassname={s.active} to="/">
+            <NavLink
+              className={s.navigation_item}
+              activeclassname={s.active}
+              to="/"
+            >
               about me
             </NavLink>
-            <NavLink className={s.navigation_item} activeclassname={s.active} to="/resume">
+            <NavLink
+              className={s.navigation_item}
+              activeclassname={s.active}
+              to="/resume"
+            >
               resume
             </NavLink>
-            <NavLink className={s.navigation_item} activeclassname={s.active} to="/projects">
+            <NavLink
+              className={s.navigation_item}
+              activeclassname={s.active}
+              to="/projects"
+            >
               projects
             </NavLink>
-            <NavLink className={s.navigation_item} activeclassname={s.active} to="/contact">
-              contact
+            <NavLink
+              className={s.navigation_item}
+              activeclassname={s.active}
+              to="/contact"
+            >
+              contacts
             </NavLink>
           </nav>
         </nav>
