@@ -73,8 +73,9 @@ const Resume = () => {
             <li className={` ${s.item_title} ${s.skills_title}`}>
               HTML5 / CSS / SASS
             </li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>Tailwind CSS</li>
             <li className={` ${s.item_title} ${s.skills_title}`}>JavaScript</li>
-            <li className={` ${s.item_title} ${s.skills_title}`}>React</li>
+            <li className={` ${s.item_title} ${s.skills_title}`}>React.js</li>
             <li className={` ${s.item_title} ${s.skills_title}`}>Redux / Redux Toolkit</li>
             <li className={` ${s.item_title} ${s.skills_title}`}>Rest API</li>
             <li className={` ${s.item_title} ${s.skills_title}`}>Git / GitHub</li>
