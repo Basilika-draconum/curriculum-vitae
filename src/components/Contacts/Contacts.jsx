@@ -2,9 +2,9 @@ import React from "react";
 import { ReactComponent as Telegram } from "../../images/icons/telegram.svg";
 import { ReactComponent as Linkedin } from "../../images/icons/linkedin.svg";
 import { ReactComponent as Github } from "../../images/icons/github.svg";
-import s from "./contact.module.scss";
+import s from "./contacts.module.scss";
 
-const Contact = () => {
+const Contacts = () => {
   return (
     <section className={s.section_contact}>
       <div className={`container ${s.contact}`}>
@@ -80,4 +80,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contacts;

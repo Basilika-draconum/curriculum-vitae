@@ -1,15 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { NavLink } from "react-router-dom";
+import menuItems from "../../data/navigation.json"
 import s from "./modal.module.scss";
 
 const Modal = ({ closeModal }) => {
-  const menuItems = [
-    { to: "/", label: "about me" },
-    { to: "/resume", label: "resume" },
-    { to: "/projects", label: "projects" },
-    { to: "/contact", label: "contact" },
-  ];
+
   return ReactDOM.createPortal(
     <div className={s.wrapper}>
       <div className={s.modal} onClick={(e) => e.stopPropagation()}>
@@ -18,7 +14,7 @@ const Modal = ({ closeModal }) => {
             <NavLink
               key={index}
               className={s.navigation_item}
-              to={item.to}
+              to={item.href}
               onClick={closeModal}
             >
               {item.label}

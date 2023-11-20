@@ -39,10 +39,10 @@ function App() {
     >
       <Routes>
         <Route path="/" element={<SharedLayout />}>
-          <Route path="/" element={<AboutPage />} />
+          <Route index element={<AboutPage />} />
           <Route path="resume" element={<ResumePage />} />
           <Route path="projects" element={<ProjectsPage />} />
-          <Route path="contact" element={<ContactPage />} />
+          <Route path="contacts" element={<ContactPage />} />
         </Route>
         <Route path="*" element={<AboutPage />} />
       </Routes>

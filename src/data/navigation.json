@@ -1,0 +1,6 @@
+ [
+    { "label": "About me", "href": "" },
+    { "label": "Resume", "href": "resume"},
+    { "label": "Projects", "href": "projects" },
+    { "label": "Contacts", "href": "contacts" }
+  ]

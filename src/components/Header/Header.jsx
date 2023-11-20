@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ReactSVG } from "react-svg";
 import { NavLink } from "react-router-dom";
 import Modal from "../Modal/Modal";
+import navigationLink from "../../data/navigation.json";
 import s from "./header.module.scss";
 import burger from "../../images/icons/menu.svg";
 import x from "../../images/icons/x.svg";
@@ -46,35 +47,16 @@ const Header = () => {
             {openModal ? <ReactSVG src={x} /> : <ReactSVG src={burger} />}
           </button>
           <nav className={s.navigation_list}>
-            <NavLink
-              className={s.navigation_item}
-              activeclassname={s.active}
-              to="/"
-            >
-              about me
-            </NavLink>
-            <NavLink
-              className={s.navigation_item}
-              activeclassname={s.active}
-              to="/resume"
-            >
-              resume
-            </NavLink>
-            <NavLink
-              className={s.navigation_item}
-              activeclassname={s.active}
-              to="/projects"
-            >
-              projects
-            </NavLink>
-            <NavLink
-              className={s.navigation_item}
-              activeclassname={s.active}
-              to="/contact"
-            >
-              contacts
-            </NavLink>
-          </nav>
+            <ul className={s.navigation_list}>
+              {navigationLink.map(({ label, href }) => (
+                <li key={label} className={s.navigation_item}>
+                  <NavLink activeclassname={s.active} to={href} href="/">
+                    {label}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </nav> 
         </nav>
       </div>
       {openModal && <Modal closeModal={handleCloseModal} />}

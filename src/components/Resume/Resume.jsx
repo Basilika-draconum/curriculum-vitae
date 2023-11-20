@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./resume.module.scss";
+import workExp from "../../data/workExpirience.json";
 
 const SkillItem = ({ skill }) => (
   <li className={`${s.item_title} ${s.skills_title}`}>{skill}</li>
@@ -13,25 +14,13 @@ const Resume = () => {
         <div className={s.block}>
           <h2 className={s.block_title}>Work Experience</h2>
           <ul className={s.block_list}>
-            <li className={s.block_item}>
-              <h3 className={s.item_title}>Climbing coach, Kharkiv</h3>
-              <p className={s.item_years}>2019-2022</p>
-              <p className={s.item_text}>
-                Developed an exercise program for clients. Conducted group and
-                individual trainings. Conducted individual training with about
-                100 clients, 60% achieved corresponding success.Worked with
-                professional athlete and other coaches.
-              </p>
-            </li>
-            <li className={s.block_item}>
-              <h3 className={s.item_title}>Travel organizer, Kharkiv</h3>
-              <p className={s.item_years}>2019-2022</p>
-              <p className={s.item_text}>
-                Compiled a travel program for kayaking, climbing, hiking and
-                skiing. I bought tickets, created programs for recreation, and
-                as a result of all the trips, no one had any injuries.
-              </p>
-            </li>
+            {workExp.map(({ title, description, years },index) => (
+              <li className={s.block_item} key={index}>
+                <h3 className={s.item_title}>{title}</h3>
+                <p className={s.item_years}>{years}</p>
+                <p className={s.item_text}>{description}</p>
+              </li>
+            ))}
           </ul>
         </div>
         <div className={s.block}>
